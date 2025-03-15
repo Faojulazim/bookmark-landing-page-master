@@ -80,35 +80,44 @@
       </div>
       <div class="flex flex-col items-center mt-10 w-full px-5">
         <div
-          class="text-veryDarkBlue font-[500] border-t border-veryDarkBlue w-full text-center"
+          class="text-veryDarkBlue font-[500] border-t border-veryDarkBlue w-full text-center cursor-pointer"
+          data-tabClicker=""
+          id="simplebookmarking"
         >
           <h2
             class="tracking-wide w-fit mx-auto py-4 after:absolute after:w-full after:h-[4px] after:bg-softRed after:bottom-0 relative after:left-[50%] after:translate-x-[-50%]"
+            data-select=""
           >
             Simple Bookmarking
           </h2>
         </div>
         <div
-          class="text-veryDarkBlue font-[500] border-t border-veryDarkBlue w-full text-center"
+          class="text-veryDarkBlue font-[500] border-t border-veryDarkBlue w-full text-center cursor-pointer"
+          data-tabClicker=""
+          id="speedysearching"
         >
           <h2
             class="tracking-wide w-fit mx-auto py-4 after:absolute after:w-full after:h-[4px] after:bg-none after:bottom-0 relative after:left-[50%] after:translate-x-[-50%]"
+            data-select=""
           >
             Speedy Searching
           </h2>
         </div>
         <div
-          class="text-veryDarkBlue font-[500] border-t border-veryDarkBlue w-full text-center"
+          class="text-veryDarkBlue font-[500] border-y border-veryDarkBlue w-full text-center cursor-pointer"
+          data-tabClicker=""
+          id="easysharing"
         >
           <h2
             class="tracking-wide w-fit mx-auto py-4 after:absolute after:w-full after:h-[4px] after:bg-none after:bottom-0 relative after:left-[50%] after:translate-x-[-50%]"
+            data-select=""
           >
             Easy Sharing
           </h2>
         </div>
       </div>
       <div>
-        <div>
+        <div class="" data-tabs="" id="simplebookmarking">
           <div class="relative mt-10">
             <img
               class="px-10"
@@ -130,19 +139,71 @@
               interface gives you complete control over how you manage your
               favourite sites.
             </p>
+            <button class="py-2 bg-softBlue px-5 rounded-md text-white mt-5">
+              More Info
+            </button>
+          </div>
+        </div>
+        <div class="hidden" data-tabs="" id="speedysearching">
+          <div class="relative mt-10">
+            <img
+              class="px-10"
+              src="images/illustration-features-tab-2.svg"
+              alt=""
+            />
+            <div
+              class="absolute top-[17%] z-[-2] left-0-0 w-[80%] rounded-r-full h-full bg-softBlue"
+            ></div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center px-5 mt-20"
+          >
+            <h1 class="text-veryDarkBlue font-500 text-3xl">
+              Intelligent search
+            </h1>
+            <p class="mt-5 text-grayishBlue">
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks.
+            </p>
+            <button class="py-2 bg-softBlue px-5 rounded-md text-white mt-5">
+              More Info
+            </button>
+          </div>
+        </div>
+        <div class="hidden" data-tabs="" id="easysharing">
+          <div class="relative mt-10">
+            <img
+              class="px-10"
+              src="images/illustration-features-tab-3.svg"
+              alt=""
+            />
+            <div
+              class="absolute top-[17%] z-[-2] left-0-0 w-[80%] rounded-r-full h-full bg-softBlue"
+            ></div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center px-5 mt-20"
+          >
+            <h1 class="text-veryDarkBlue font-500 text-3xl">
+              Share your bookmarks
+            </h1>
+            <p class="mt-5 text-grayishBlue">
+              Easily share your bookmarks and collections with others. Create a
+              shareable link that you can send at the click of a button.
+            </p>
+            <button class="py-2 bg-softBlue px-5 rounded-md text-white mt-5">
+              More Info
+            </button>
           </div>
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
 
 <!-- Features Pricing Contact Login   
-   More Info
-Intelligent search Our powerful search feature will help you find saved sites in
-no time at all. No need to trawl through all of your bookmarks. More Info Share
-your bookmarks Easily share your bookmarks and collections with others. Create a
-shareable link that you can send at the click of a button. More Info Download
+ Download
 the extension We’ve got more browsers in the pipeline. Please do let us know if
 you’ve got a favourite you’d like us to prioritize. Add to Chrome Minimum
 version 62 Add & Install Extension Add to Firefox Minimum version 55 Add &
