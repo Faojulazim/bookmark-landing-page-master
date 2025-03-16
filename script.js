@@ -1,5 +1,32 @@
 const tabs = document.querySelectorAll("[data-tabs]");
 const tabClicker = document.querySelectorAll("[data-tabClicker]");
+const dropdown = document.querySelectorAll("[data-dropdown]");
+
+dropdown.forEach((items) => {
+  items.addEventListener("click", (e) => {
+    items.parentElement.querySelector("[data-para]").classList.toggle("hidden");
+    items.parentElement
+      .querySelector("[data-fill]")
+      .classList.toggle("stroke-[hsl(0_94%_66%)]");
+    items.parentElement
+      .querySelector("[data-arrow]")
+      .classList.toggle("rotate-[180deg]");
+    dropdown.forEach((diffItem) => {
+      if (items !== diffItem) {
+        diffItem.parentElement
+          .querySelector("[data-para]")
+          .classList.add("hidden");
+        diffItem.parentElement
+          .querySelector("[data-fill]")
+          .classList.remove("stroke-[hsl(0_94%_66%)]");
+        diffItem.parentElement
+          .querySelector("[data-arrow]")
+          .classList.remove("rotate-[180deg]");
+      }
+    });
+  });
+});
+
 (function getItems() {
   tabClicker.forEach((items) => {
     items.addEventListener("click", (e) => {
