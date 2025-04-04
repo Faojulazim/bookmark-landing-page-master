@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body class="font-Rubik">
@@ -25,27 +25,27 @@
         class="flex items-center justify-between py-7 lg:py-10 px-10 lg:px-20 xl:px-32 2xl:px-52"
       >
         <img src="images/logo-bookmark.svg" alt="" />
-        <div>
+        <div class="md:block hidden">
           <ul
             class="text-veryDarkBlue gap-x-10 text-center flex gap-y-0 items-center"
           >
             <li
-              class="uppercase py-3 tracking-widest cursor-pointer hover:text-softRed"
+              class="uppercase py-3 tracking-widest cursor-pointer hover:text-softRed text-[15px] lg:text-md"
             >
               Features
             </li>
             <li
-              class="uppercase py-3 tracking-widest cursor-pointer hover:text-softRed"
+              class="uppercase py-3 tracking-widest cursor-pointer hover:text-softRed text-[15px] lg:text-md"
             >
               Pricing
             </li>
             <li
-              class="uppercase py-3 tracking-widest cursor-pointer hover:text-softRed"
+              class="uppercase py-3 tracking-widest cursor-pointer hover:text-softRed text-[15px] lg:text-md"
             >
               Contact
             </li>
             <button
-              class="uppercase py-3 rounded-md tracking-widest px-10 bg-softRed border-2 border-softRed hover:bg-white hover:text-softRed transition-all text-white"
+              class="uppercase py-3 rounded-md text-[15px] lg:text-md tracking-widest px-10 bg-softRed border-2 border-softRed hover:bg-white hover:text-softRed transition-all text-white"
             >
               LOGIN
             </button>
@@ -553,7 +553,7 @@
         <form
           class="w-full flex items-start flex-col md:flex-row md:gap-x-5 gap-y-5 mt-10 flex-1 max-w-[600px]"
         >
-          <div class="md:w-[70%] rounded-lg" id="changeStyles">
+          <div class="md:w-[70%] w-full rounded-lg" id="changeStyles">
             <!-- p-[3px] bg-softRed -->
             <input
               type="text"
